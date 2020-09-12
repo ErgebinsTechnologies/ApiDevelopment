@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymleaf.org">
+<head>
+<meta charset="ISO-8859-1"></meta>
+<title>Insert title here</title>
+</head>
+<body>
+<form>
+<video id="video" th:src="@{'/getimage/'+${file.getName()}}"> height="60" autoplay="autoplay"></video>
+</form>
+</body>
+</html>

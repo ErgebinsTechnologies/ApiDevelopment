@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymleaf.org">
+<head>
+<meta charset="ISO-8859-1"></meta>
+<title>Insert title here</title>
+<style>
+</style>
+</head>
+<body>
+<div>
+<h1>List of files Uploaded</h1>
+<div th:each="file:${files}">
+<p align="centre"><img alt="" th:src="@{'/getimage/'+${file.getName()}}" width="200" height="200"></p>
+<span th:text="${file.getName()}"/></a>
+<span th:text="${file.length()/1024}"/>KB 
+
+</div>
+</div>
+</body>
+</html>
